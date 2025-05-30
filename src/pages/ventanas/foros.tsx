@@ -65,6 +65,8 @@ export default function Foros() {
 
   return (
     <div className="bg-[#f9f9f6] min-h-screen pb-10">
+      <br /><br /><br />
+      
       {/* Modal para nuevo tema */}
       {showModal && (
         <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50">
