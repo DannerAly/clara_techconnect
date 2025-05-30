@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import AOS from "aos";
 import "aos/dist/aos.css";
 import clara from "../../assets/logo.png";
 
@@ -15,7 +14,7 @@ const NeonButton = ({ children, className = "", ...props }: React.ButtonHTMLAttr
 
 const Inicio = () => {
     useEffect(() => {
-        AOS.init({ once: true, duration: 900, offset: 80 });
+
     }, []);
 
     return (

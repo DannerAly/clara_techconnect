@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import AOS from "aos";
+//import AOS from "aos";
 import "aos/dist/aos.css";
 
 // Componente para mostrar estrellas de puntaje
@@ -366,7 +366,7 @@ const ConsultasJuridicas = () => {
     const [especialidad, setEspecialidad] = useState("");
 
     useEffect(() => {
-        AOS.init({ once: true, duration: 900, offset: 80 });
+        //AOS.init({ once: true, duration: 900, offset: 80 });
     }, []);
 
     // Filtro simple
