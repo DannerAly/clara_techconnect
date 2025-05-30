@@ -35,6 +35,108 @@ const forosDataInicial = [
     ultimaRespuesta: "hace 10 minutos",
     respuestasLista: respuestasEjemplo,
   },
+  {
+    tema: "¿Cómo registrar una marca en México?",
+    autor: "Lic. Fernanda Ruiz",
+    respuestas: 2,
+    ultimaRespuesta: "hace 5 minutos",
+    respuestasLista: [
+      {
+        autor: "Abg. Luis Mendoza",
+        texto: "Debes acudir al IMPI y llenar la solicitud correspondiente.",
+        fecha: "hace 4 minutos",
+      },
+      {
+        autor: "Carlos Pérez",
+        texto: "El proceso puede tardar varias semanas, ten paciencia.",
+        fecha: "hace 2 minutos",
+      },
+    ],
+  },
+  {
+    tema: "¿Qué hago si me detiene la policía sin motivo?",
+    autor: "Juan Ramírez",
+    respuestas: 4,
+    ultimaRespuesta: "hace 20 minutos",
+    respuestasLista: [
+      {
+        autor: "Ana Torres",
+        texto: "Mantén la calma y pide hablar con un abogado.",
+        fecha: "hace 18 minutos",
+      },
+      {
+        autor: "María López",
+        texto: "Tienes derecho a guardar silencio.",
+        fecha: "hace 15 minutos",
+      },
+      {
+        autor: "Abg. Luis Mendoza",
+        texto: "Solicita que te informen el motivo de la detención.",
+        fecha: "hace 12 minutos",
+      },
+      {
+        autor: "Carlos Pérez",
+        texto: "No firmes nada sin la presencia de tu abogado.",
+        fecha: "hace 10 minutos",
+      },
+    ],
+  },
+  {
+    tema: "¿Cómo puedo obtener la custodia de mis hijos?",
+    autor: "Sofía Martínez",
+    respuestas: 6,
+    ultimaRespuesta: "hace 50 minutos",
+    respuestasLista: [
+      {
+        autor: "Abg. Luis Mendoza",
+        texto: "Debes presentar una demanda de custodia ante el juzgado familiar.",
+        fecha: "hace 45 minutos",
+      },
+      {
+        autor: "Ana Torres",
+        texto: "Reúne pruebas que demuestren tu capacidad como madre/padre.",
+        fecha: "hace 40 minutos",
+      },
+      {
+        autor: "Carlos Pérez",
+        texto: "El juez siempre prioriza el bienestar del menor.",
+        fecha: "hace 35 minutos",
+      },
+      {
+        autor: "María López",
+        texto: "Puedes solicitar asesoría gratuita en el DIF.",
+        fecha: "hace 30 minutos",
+      },
+      {
+        autor: "Lic. Fernanda Ruiz",
+        texto: "No olvides presentar documentos de identidad y domicilio.",
+        fecha: "hace 25 minutos",
+      },
+      {
+        autor: "Juan Ramírez",
+        texto: "Busca apoyo psicológico para tus hijos durante el proceso.",
+        fecha: "hace 20 minutos",
+      },
+    ],
+  },
+  {
+    tema: "¿Qué derechos tengo como trabajador despedido?",
+    autor: "Pedro Sánchez",
+    respuestas: 2,
+    ultimaRespuesta: "hace 1 hora",
+    respuestasLista: [
+      {
+        autor: "Carlos Pérez",
+        texto: "Tienes derecho a una indemnización y a recibir tu finiquito.",
+        fecha: "hace 55 minutos",
+      },
+      {
+        autor: "Abg. Luis Mendoza",
+        texto: "Acude a la Junta de Conciliación y Arbitraje para asesoría.",
+        fecha: "hace 50 minutos",
+      },
+    ],
+  },
 ];
 
 export default function Foros() {
