@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "aos/dist/aos.css";
+//import "aos/dist/aos.css";
 import clara from "../../assets/logo.png";
 
 const NeonButton = ({ children, className = "", ...props }: React.ButtonHTMLAttributes<HTMLButtonElement> & { children: React.ReactNode }) => (
