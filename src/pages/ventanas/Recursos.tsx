@@ -41,7 +41,7 @@ const recursosEjemplo = [
   {
     titulo: "Guía de Derechos Laborales",
     descripcion: "Resumen de derechos laborales para trabajadores en Bolivia, con ejemplos prácticos.",
-    portada: "https://img.icons8.com/fluency/96/brochure.png",
+    portada: "https://img.icons8.com/fluency/96/pdf.png",
     tipo: "Documento",
     categoria: "Guías",
     urlVer: "#",
@@ -50,7 +50,7 @@ const recursosEjemplo = [
   {
     titulo: "Manual de Violencia Familiar",
     descripcion: "Información y pasos legales para casos de violencia familiar, con contactos de ayuda.",
-    portada: "https://img.icons8.com/fluency/96/brochure.png",
+    portada: "https://img.icons8.com/fluency/96/pdf.png",
     tipo: "Documento",
     categoria: "Manuales",
     urlVer: "#",
