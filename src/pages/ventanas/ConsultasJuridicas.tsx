@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 //import AOS from "aos";
-import "aos/dist/aos.css";
+//import "aos/dist/aos.css";
 
 // Componente para mostrar estrellas de puntaje
 const StarRating = ({ rating }: { rating: number }) => (
