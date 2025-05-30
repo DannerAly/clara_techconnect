@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-full bg-white text-black shadow-md fixed top-0 left-0 z-10">
-  
+
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
         <div className="text-2xl flex flex-row items-center">   <img src={Clara} className="w-10" alt="" /> <b>Clara</b> </div>
         <div className="hidden md:flex space-x-8">
@@ -43,8 +43,8 @@ const Navbar = () => {
       >
         <Link to="/" className="hover:text-amber-300 transition" onClick={() => setOpen(!open)}>Inicio</Link>
         <Link to="/consultas-juridicas" className="hover:text-amber-300 transition" onClick={() => setOpen(!open)}>Consultas Jurídicas</Link>
-        <Link to="/chat" className="hover:text-amber-300 transition" onClick={() => setOpen(!open)}>Foros</Link>
-        <Link to="/contacto" className="hover:text-amber-300 transition" onClick={() => setOpen(!open)}>Recursos legales</Link>
+        <Link to="/foros" className="hover:text-amber-300 transition" onClick={() => setOpen(!open)}>Foros</Link>
+        <Link to="/recursos-legales" className="hover:text-amber-300 transition" onClick={() => setOpen(!open)}>Recursos legales</Link>
       </div>
     </nav>
   );
