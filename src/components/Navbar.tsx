@@ -40,9 +40,10 @@ const Navbar = () => {
     ${open ? "translate-x-0 opacity-100 pointer-events-auto" : "translate-x-full opacity-0 pointer-events-none"}
   `}
       >
-        <Link to="/" className="hover:text-cyan-400 transition" onClick={() => setOpen(!open)}>Sobre Aly</Link>
-        <Link to="/proyectos" className="hover:text-cyan-400 transition" onClick={() => setOpen(!open)}>Proyectos</Link>
-        <Link to="/contacto" className="hover:text-cyan-400 transition" onClick={() => setOpen(!open)}>Contacto</Link>
+        <Link to="/" className="hover:text-amber-300 transition" onClick={() => setOpen(!open)}>Inicio</Link>
+        <Link to="/consultas-juridicas" className="hover:text-amber-300 transition" onClick={() => setOpen(!open)}>Consultas Jurídicas</Link>
+        <Link to="/chat" className="hover:text-amber-300 transition" onClick={() => setOpen(!open)}>Foros</Link>
+        <Link to="/contacto" className="hover:text-amber-300 transition" onClick={() => setOpen(!open)}>Recursos legales</Link>
       </div>
     </nav>
   );
