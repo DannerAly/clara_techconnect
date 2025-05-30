@@ -1,14 +1,17 @@
 import React, { useEffect } from "react";
 //import "aos/dist/aos.css";
 import clara from "../../assets/logo.png";
+import portada from "../../assets/portada.jpg"
+
+
 
 const NeonButton = ({ children, className = "", ...props }: React.ButtonHTMLAttributes<HTMLButtonElement> & { children: React.ReactNode }) => (
     <button
-        className={`relative px-8 py-4 font-semibold text-white bg-black rounded-lg shadow-lg group overflow-hidden transition ${className}`}
+        className={`relative px-2 py-4 font-semibold text-black bg-amber-300  rounded-lg shadow-lg group overflow-hidden transition ${className}`}
         {...props}
     >
-        <span className="absolute inset-0 rounded-lg border-2 border-yellow-400 shadow-[0_0_16px_4px_rgba(253,224,71,0.7)] group-hover:shadow-[0_0_32px_8px_rgba(253,224,71,1)] transition-all duration-300 pointer-events-none"></span>
-        <span className="relative z-10 group-hover:text-yellow-300 transition">{children}</span>
+        <span className="absolute inset-0 rounded-lg  shadow-[0_0_16px_4px_rgba(253,224,71,0.7)] group-hover:shadow-[0_0_32px_8px_rgba(253,224,71,1)] transition-all duration-300 pointer-events-none"></span>
+        <span className="relative z-10 font-bold group-hover:text-white-300 transition">{children}</span>
     </button>
 );
 
@@ -18,22 +21,37 @@ const Inicio = () => {
     }, []);
 
     return (
-        <div className="w-full min-h-screen bg-[#faf8f2] pb-16">
+        <div className="w-full">
             {/* Hero Section */}
-            <section data-aos="fade-up" className="w-full bg-gradient-to-r from-orange-500 to-yellow-200 py-16 md:py-24">
-                <div className="max-w-6xl mx-auto px-4 flex flex-col items">
-                    <h1 className="text-4xl md:text-6xl font-extrabold mb-6 text-black drop-shadow-lg">
-                        "Una ley mas clara con Clara"
-                    </h1>
-                    <p className="text-lg md:text-2xl max-w-2xl mb-10 text-black/90 font-medium">
-                        Te ayudamos en procesos jurídicos, con clara y profesionales clasificados.
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                        <NeonButton >Consultas Jurídicas</NeonButton>
-                        <NeonButton >Chatear con Clara</NeonButton>
-                    </div>
-                </div>
-            </section>
+            <br /><br /> <br />
+       <section
+    data-aos="fade-up"
+    className="w-full py-26 md:py-24"
+    style={{
+        backgroundImage: `url(${portada})`,
+        backgroundSize: "cover",
+        backgroundPosition: "35% 40%", // Cambia el foco a la derecha por defecto
+        backgroundRepeat: "no-repeat",
+
+    }}
+>
+    <div className="flex flex-col items-start md:px-20 px-4">
+        <h1 className="text-amber-50 font-extrabold text-4xl md:text-5xl">
+            Una ley mas clara con Clara
+        </h1>
+        <p className="font-bold text-lg md:text-2xl max-w-2xl mb-10 text-amber-50 hidden md:block">
+            Te ayudamos en procesos jurídicos, con clara y profesionales clasificados.
+        </p>
+        <div className="flex flex-row md:flex-row gap-4 mt-1 ">
+            <NeonButton >Consultas Jurídicas</NeonButton>
+            <NeonButton>Chatear con Clara</NeonButton>
+        </div>
+
+        <br /><br /><br />
+        
+        <br /><br /><br />
+    </div>
+</section>
 
             {/* Search Section */}
             <section data-aos="fade-up" className="w-full py-12 md:py-20 bg-[#faf8f2]">
@@ -48,7 +66,7 @@ const Inicio = () => {
                         <input
                             type="text"
                             placeholder="Describe tu consulta legal..."
-                            className="w-full md:w-1/2 px-4 py-3 rounded-lg border border-gray-200 focus:border-yellow-400 focus:ring-2 focus:ring-yellow-300 outline-none transition-all bg-white shadow"
+                            className="w-full md:w-1/2 px-4  rounded-lg border border-gray-200 focus:border-yellow-400 focus:ring-2 focus:ring-yellow-300 outline-none transition-all bg-white shadow"
                         />
                         <select
                             className="w-full md:w-1/3 px-4 py-3 rounded-lg border border-gray-200 focus:border-yellow-400 focus:ring-2 focus:ring-yellow-300 outline-none transition-all bg-white shadow text-gray-700"
@@ -74,7 +92,7 @@ const Inicio = () => {
                     <p className="mb-6 text-gray-700">
                         Nuestro asistente impulsado por inteligencia artificial te guía paso a paso a través de tus consultas legales, proporcionando orientación personalizada basada en tu situación específica.
                     </p>
-                    <NeonButton className="w-full md:w-auto">Iniciar Conversación</NeonButton>
+                    <NeonButton className="w-full md:w-auto bg-cyan-700">Iniciar Conversación</NeonButton>
                 </div>
                 {/* Simulación de chat */}
                 <div className="bg-[#faf8f2] border border-yellow-100 rounded-xl p-6 shadow flex flex-col gap-4">
@@ -106,7 +124,7 @@ const Inicio = () => {
             <section data-aos="fade-up" className="w-full py-16 bg-[#f7f4ea]">
                 <div className="max-w-6xl mx-auto px-4">
                     <h2 className="text-2xl md:text-3xl font-bold text-center mb-2 text-gray-900">
-                        Recursos Legales Populares
+                        Plantillas para tus documentos
                     </h2>
                     <p className="text-center text-gray-600 mb-10">
                         Accede a plantillas, guías y recursos legales esenciales para enfrentar situaciones comunes.
@@ -186,7 +204,7 @@ const Inicio = () => {
             </section>
 
             {/* Footer */}
-            <footer className="w-full bg-[#faf8f2] border-t border-yellow-100 pt-10 pb-8 mt-8">
+            <footer className="w-full bg-[#faf8f2]   border-t border-yellow-100 pt-10 pb-8 mt-8">
                 <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10">
                     {/* Columna 1 */}
                     <div>
