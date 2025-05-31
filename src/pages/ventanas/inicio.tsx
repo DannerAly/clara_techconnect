@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 //import "aos/dist/aos.css";
 import clara from "../../assets/logo.png";
 import portada from "../../assets/portada.jpg"
+import { Link } from "react-router-dom";
 
 
 
@@ -24,34 +25,34 @@ const Inicio = () => {
         <div className="w-full">
             {/* Hero Section */}
             <br /><br /> <br />
-       <section
-    data-aos="fade-up"
-    className="w-full py-26 md:py-24"
-    style={{
-        backgroundImage: `url(${portada})`,
-        backgroundSize: "cover",
-        backgroundPosition: "35% 40%", // Cambia el foco a la derecha por defecto
-        backgroundRepeat: "no-repeat",
+            <section
+                data-aos="fade-up"
+                className="w-full py-26 md:py-24"
+                style={{
+                    backgroundImage: `url(${portada})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "35% 40%", // Cambia el foco a la derecha por defecto
+                    backgroundRepeat: "no-repeat",
 
-    }}
->
-    <div className="flex flex-col items-start md:px-20 px-4">
-        <h1 className="text-amber-50 font-extrabold text-4xl md:text-5xl">
-            Una ley mas clara con Clara
-        </h1>
-        <p className="font-bold text-lg md:text-2xl max-w-2xl mb-10 text-amber-50 hidden md:block">
-            Te ayudamos en procesos jurídicos, con clara y profesionales clasificados.
-        </p>
-        <div className="flex flex-row md:flex-row gap-4 mt-1 ">
-            <NeonButton >Consultas Jurídicas</NeonButton>
-            <NeonButton>Chatear con Clara</NeonButton>
-        </div>
+                }}
+            >
+                <div className="flex flex-col items-start md:px-20 px-4">
+                    <h1 className="text-amber-50 font-extrabold text-4xl md:text-5xl">
+                        Una ley mas clara con Clara
+                    </h1>
+                    <p className="font-bold text-lg md:text-2xl max-w-2xl mb-10 text-amber-50 hidden md:block">
+                        Te ayudamos en procesos jurídicos, con clara y profesionales clasificados.
+                    </p>
+                    <div className="flex flex-row md:flex-row gap-4 mt-1 ">
+                        <NeonButton >Consultas Jurídicas</NeonButton>
+                        <NeonButton>Chatear con Clara</NeonButton>
+                    </div>
 
-        <br /><br /><br />
-        
-        <br /><br /><br />
-    </div>
-</section>
+                    <br /><br /><br />
+
+                    <br /><br /><br />
+                </div>
+            </section>
 
             {/* Search Section */}
             <section data-aos="fade-up" className="w-full py-12 md:py-20 bg-[#faf8f2]">
@@ -92,7 +93,12 @@ const Inicio = () => {
                     <p className="mb-6 text-gray-700">
                         Nuestro asistente impulsado por inteligencia artificial te guía paso a paso a través de tus consultas legales, proporcionando orientación personalizada basada en tu situación específica.
                     </p>
-                    <NeonButton className="w-full md:w-auto bg-cyan-700">Iniciar Conversación</NeonButton>
+                    <NeonButton className="w-full md:w-auto bg-cyan-700"><Link
+  to="/chat"
+  className="mx-auto block px-8 py-3 rounded-lg  text-white font-semibold hover:bg-yellow-100 transition text-center"
+>
+  Iniciar conversación
+</Link></NeonButton>
                 </div>
                 {/* Simulación de chat */}
                 <div className="bg-[#faf8f2] border border-yellow-100 rounded-xl p-6 shadow flex flex-col gap-4">
@@ -132,26 +138,28 @@ const Inicio = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                         {/* Card 1 */}
                         <div data-aos="zoom-in" className="bg-white border border-yellow-100 rounded-xl p-6 shadow hover:shadow-yellow-200 transition">
-                            <div className="border-b border-gray-200 pb-2 mb-3 text-lg font-semibold text-gray-900">Small Business Legal Tips</div>
+                            <div className="border-b border-gray-200 pb-2 mb-3 text-lg font-semibold text-gray-900">Tips de negocio</div>
                             <div className="text-sm text-gray-500 mb-4">Business</div>
                             <NeonButton className="w-full">Descargar Recurso</NeonButton>
                         </div>
                         {/* Card 2 */}
                         <div data-aos="zoom-in" data-aos-delay="100" className="bg-white border border-yellow-100 rounded-xl p-6 shadow hover:shadow-yellow-200 transition">
-                            <div className="border-b border-gray-200 pb-2 mb-3 text-lg font-semibold text-gray-900">Guide to Tenant Rights</div>
+                            <div className="border-b border-gray-200 pb-2 mb-3 text-lg font-semibold text-gray-900">Guía para tramites de impuestos</div>
                             <div className="text-sm text-gray-500 mb-4">Housing</div>
                             <NeonButton className="w-full">Descargar Recurso</NeonButton>
                         </div>
                         {/* Card 3 */}
                         <div data-aos="zoom-in" data-aos-delay="200" className="bg-white border border-yellow-100 rounded-xl p-6 shadow hover:shadow-yellow-200 transition">
-                            <div className="border-b border-gray-200 pb-2 mb-3 text-lg font-semibold text-gray-900">Understanding Contracts</div>
+                            <div className="border-b border-gray-200 pb-2 mb-3 text-lg font-semibold text-gray-900">Plantilla de cartas de Poder</div>
                             <div className="text-sm text-gray-500 mb-4">Contracts</div>
                             <NeonButton className="w-full">Descargar Recurso</NeonButton>
                         </div>
                     </div>
-                    <button className="mx-auto block px-8 py-3 rounded-lg bg-gray-200 text-gray-700 font-semibold hover:bg-yellow-100 transition">
+                    <Link to="/recursos-legales"
+                        className="mx-auto block px-8 py-3 rounded-lg bg-gray-200 text-gray-700 font-semibold hover:bg-yellow-100 transition text-center"
+                    >
                         Ver Todos los Recursos
-                    </button>
+                    </Link>
                 </div>
             </section>
 
