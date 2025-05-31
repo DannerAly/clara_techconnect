@@ -45,7 +45,7 @@ const Chat = () => {
           <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-100 text-yellow-900 font-bold text-xl shadow">
             <img src={clara} alt="" />
           </span>
-          <span className="font-bold text-yellow-800 text-lg">Asistente Legal IA</span>
+          <span className="font-bold text-yellow-800 text-lg"> Clara</span>
         </div>
         {/* Chat Body */}
         <div className="flex-1 overflow-y-auto px-6 py-4 space-y-4 bg-[#faf8f2]">

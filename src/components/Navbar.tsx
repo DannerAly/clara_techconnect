@@ -14,6 +14,9 @@ const Navbar = () => {
           <Link to="/consultas-juridicas" className="hover:text-amber-300 transition" onClick={() => setOpen(!open)}>Consultas Jurídicas</Link>
           <Link to="/foros" className="hover:text-amber-300 transition" onClick={() => setOpen(!open)}>Foros</Link>
           <Link to="/recursos-legales" className="hover:text-amber-300 transition" onClick={() => setOpen(!open)}>Recursos legales</Link>
+          <Link to="/chat" className="hover:text-amber-300 transition" onClick={() => setOpen(!open)}>chat</Link>
+          
+        
         </div>
         <button
           className="md:hidden focus:outline-none"
@@ -45,6 +48,7 @@ const Navbar = () => {
         <Link to="/consultas-juridicas" className="hover:text-amber-300 transition" onClick={() => setOpen(!open)}>Consultas Jurídicas</Link>
         <Link to="/foros" className="hover:text-amber-300 transition" onClick={() => setOpen(!open)}>Foros</Link>
         <Link to="/recursos-legales" className="hover:text-amber-300 transition" onClick={() => setOpen(!open)}>Recursos legales</Link>
+         <Link to="/chat" className="hover:text-amber-300 transition" onClick={() => setOpen(!open)}>chat</Link>
       </div>
     </nav>
   );
